@@ -1,0 +1,70 @@
+{% extends 'root/base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+<ul class="list-articles">
+    {% for p in results %}
+    <li>
+        <p><a href="#"><img class="img-article-left" src="{{p.image.url}}"></a></p>
+        <h2 class="item_name"><a href="#">{{p.name}}</a></h2>
+        <p class="item_name2">{{p.price}}</p>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
+<style>
+    .img-article-left{
+  max-width: 375px;
+  height: auto;
+  position: absolute;
+}
+
+.item_name{
+  font-family: 'Chivo', sans-serif;
+  position: absolute;
+  margin-top: 510px;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.list-articles{
+  margin-top: 130px;
+  margin-left: 200px;
+  list-style-type: none;
+  list-style: none;
+}
+
+.item_name2{
+  margin-left: 330px;
+  font-family: 'Chivo', sans-serif;
+  position: absolute;
+  margin-top: 510px;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.choice p{
+  display:inline-block;
+
+}
+
+.choice {
+  word-spacing:20px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 80px;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+
+
+}
+</style>
+{% endblock %}

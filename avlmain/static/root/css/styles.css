@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,800;1,300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Chivo', sans-serif;
+}
+html, body {
+	font-family: 'Chivo', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+.list_menu {
+  list-style-type: none;
+  margin-bottom: 50px;
+  font-family: 'Chivo', sans-serif;;
+  font-style: bold;
+
+}
+
+.list_menu a{
+  text-decoration: none;
+  font-family: 'Chivo', sans-serif;
+  font-style: bold;
+  font-size: 25px;
+  color: #000000;
+  border-left: 2px solid #000000;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
+.list_menu li{
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+
+
+
+.menu{
+  padding: 18vh 60px;
+  position: fixed;
+  background: rgba(20,20,20,0.2);
+  height: 100vh;
+  backdrop-filter: blur(16px);
+  left: -200px;
+  transition: all 0.2s ease;
+}
+
+.menu:hover{
+  left: 0;
+  transition: all 0.2s ease;
+
+
+}
+
+.list_menu a:hover{
+  border-left: 2px solid #000000;
+  padding-left: 10px;
+  transition: all 0.3s ease;
+
+}
+
+
+  }
+
+.body {
+  font-family: 'Chivo', sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  font-family: 'Chivo', sans-serif;
+  font-style: thin;
+  vertical-align: top;
+  margin-left: 400px;
+  margin-top: 21px;
+  text-decoration: none;
+  text-color: #000000;
+  color: #000000;
+}
+.header_li{
+  margin-right: 65px;
+  text-color: #000000;
+  font-size: 22px;
+  font-weight: 100;
+  display:inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.space{
+  margin-left: 490px;
+
+}
+
+.logo_1{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  color: #000000;
+  margin-top:113px;
+  margin-left: 662px;
+  position: absolute;
+  list-style-type: none;
+}
+
+.logo_2{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  margin-top:220px;
+  margin-left: 1068px;
+  position: absolute;
+  list-style-type: none;
+
+
+}
+
+.logo_3{
+  display: inline-block;
+  position: absolute;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  color: #000000;
+  margin-top:113px;
+  margin-left: 662px;
+  position: absolute;
+  list-style-type: none;
+
+}
+.content{
+  display: inline-block;
+  position: absolute;
+
+}
+.logo_1:hover{
+  padding-top: 10px;
+  transition: all 0.3s ease;
+
+}
+
+
+.logo_2:hover{
+  padding-top: 10px;
+  transition: all 0.3s ease;
+
+}
+
+.logo_about{
+  width: 171px;
+  height: 100px;
+
+}
+
+.img-article-left{
+  height: 563px;
+  width: 375px;
+
+
+}
+
+.img-article-left{
+  max-width: 375px;
+  height: auto;
+  position: absolute;
+}
+
+.item_name{
+  font-family: 'Chivo', sans-serif;
+  position: absolute;
+  margin-top: 510px;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.list-articles{
+  margin-top: 130px;
+  margin-left: 200px;
+  list-style-type: none;
+  list-style: none;
+}
+
+.item_name2{
+  margin-left: 330px;
+  font-family: 'Chivo', sans-serif;
+  position: absolute;
+  margin-top: 510px;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.choice p{
+  display:inline-block;
+
+}
+
+.choice {
+  word-spacing:20px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 80px;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+
+
+}

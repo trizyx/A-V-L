@@ -1,0 +1,108 @@
+{% extends 'root/base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'root/css/styles.css' %}">
+    <link type="text/css" href="{% static 'root/css/styles.css' %}" rel="stylesheet" />
+    <title>{{ title }}</title>
+
+<body>
+
+<div class="content">
+
+    <div class="email_form">
+        <h1 class="sign_up">SIGN UP FOR OUR NEWSLETTER</h1>
+        <form id="form" method="post" action="{% url 'about' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="email" name="email" placeholder="Enter your email here" required>
+            <button class='email_button' type="submit">Subscribe</button>
+        </form>
+    </div>
+
+
+
+</div>
+
+
+<style>
+.logo_3{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #000000;
+  margin-top:850px;
+  margin-left: 1500px;
+  display:inline-block;
+  overflow: hidden;
+}
+
+
+.email_form{
+  margin-top: 750px;
+  margin-left: 400px;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  color: #000000;
+  list-style-type: none;
+  display:inline-block;
+  position: absolute;
+}
+
+.email_button{
+  margin-top: 2px;
+  margin-left: 5px;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 200;
+  color: #000000;
+  position: absolute;
+  list-style-type: none;
+  background-color: white;
+  border: none;
+  outline: none;
+
+}
+
+.sign_up{
+
+  font-family: 'Chivo', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+  display:inline-block;
+}
+
+.logo_4{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #000000;
+  display:inline-block;
+  overflow: hidden;
+}
+</style>
+
+</body>
+<!--<script>-->
+<!--    let url='https://script.google.com/macros/s/AKfycbzfeX9AJrbEv4ih4C_il7ho0dy0VZ6IEAXDFnku_XCvwvqyIhHlw88dPQn1tJSByxbQ/exec'-->
+<!--    let form=document.querySelector('#form');-->
+<!--    form.addEventListener("submit",(e)=>{-->
+<!--      let d=new FormData();-->
+<!--      fetch(url, {-->
+<!--          method:"POST",-->
+<!--          body:d-->
+<!--      }).then((res)=>res.text())-->
+<!--      .then((finalRes)=>console.log(finalRes))-->
+<!--      e.preventDefault();-->
+
+
+<!--    })-->
+
+<!--</script>-->
+</html>
+{% endblock %}
