@@ -15,6 +15,7 @@ HOW TO RUN SERVER
 1) cd avl 
 2) python manage.py runserver
 
+![image](https://github.com/trizyx/A-V-L/assets/104139419/ed3fd47b-4444-4550-bc5c-3573ad92e907)
 
 
 
